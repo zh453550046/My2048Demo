@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_floating_material_light"
+    tools:context=".ActivityMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_orange_dark">
+
+        <TextView
+            android:id="@+id/tv_top_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="最高分:0分"
+            android:gravity="center"
+            android:background="@drawable/tv_bg"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="得分:0分"
+            android:background="@drawable/tv_bg"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <lm.wh.com.my2048.view.MainGridLayout
+        android:id="@+id/gl"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/white" />
+
+</LinearLayout>
